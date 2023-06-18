@@ -8,7 +8,11 @@ const InputComponent = (props) => {
     }
     return (
         <Container>
-            <Title>{props.title}</Title>
+            <Title
+                disabled={props.disabled}
+            >
+                {props.title}
+            </Title>
             <Input
                 value={props.value}
                 disabled={props.disabled}

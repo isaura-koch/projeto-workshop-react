@@ -10,7 +10,7 @@ export const Title = styled.h2`
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #0036AD;
+    color:  ${props => props.disabled ? "#C5CBD9" : "#0036AD"};
 `;
 
 export const Input = styled.input`
@@ -18,7 +18,7 @@ export const Input = styled.input`
     flex-flow: nowrap row;
     width: 200px;
     height: 34px;
-    border: 1px solid #0036AD;
+    border: 1px solid ${props => props.disabled ? "#C5CBD9" : "#0036AD"};
     background-color: ${props => props.disabled ? "#F4F7FA" : "#FFFFFF"};
     cursor: ${props => props.disabled ? "not-allowed" : "default"};
     border-radius: 4px;
